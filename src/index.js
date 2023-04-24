@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename='/ocr_webdev_p7'>
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
