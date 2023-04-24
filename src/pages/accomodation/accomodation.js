@@ -24,7 +24,7 @@ function Accomodation() {
     return (
         <div className='accomodation'>
             <Header />
-            <Slider autoSlide={true}>
+            <Slider autoSlide={true} autoSlideInterval={3000}>
                 {
                     images.map((item, i) => (
                         <img key={i} className='image1' alt='sliderimage' src={item} />
