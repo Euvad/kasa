@@ -1,0 +1,12 @@
+@import "../../utils/reset";
+.about{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    &_accordion{
+        margin: 20px;
+        @media screen and (max-width: 400px){
+            margin: 10px 0;
+        }
+    }
+}

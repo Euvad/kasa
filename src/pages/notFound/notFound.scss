@@ -1,0 +1,49 @@
+@import "../../utils/reset";
+
+.notFound{
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: $main-color;
+}
+.notFound-error{
+    height: 100%;
+    .container-notFound-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+        margin-bottom: 6%;
+        h1{
+            font-size: 288px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 36px;
+            font-weight: 500;
+        }
+        a{
+            margin-top: 8%;
+            width: auto;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width:426px){
+    .notFound-error{
+        height: auto;
+        .container-notFound-text{
+            margin-top: 175px;
+            margin-bottom: 175px;
+            height: auto;
+            h1{
+                font-size: 96px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}

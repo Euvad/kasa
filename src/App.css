@@ -1,0 +1,8 @@
+@import "./utils/_reset.scss";
+.App{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

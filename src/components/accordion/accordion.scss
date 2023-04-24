@@ -1,0 +1,83 @@
+@import '../../utils/reset';
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.accordion {
+    padding: 3px;
+}
+
+.item {
+    background-color: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+}
+
+.title {
+    color: white;
+    display: flex;
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: $main-color;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    //position: relative;
+
+    /* Ajout de la propriété position relative */
+    @media screen and (max-width: 400px) {
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+.content { 
+    color: $main-color;
+    background: #f7f7f7;
+    overflow: hidden;
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+
+    transition: all 0.5s ease;
+
+    text-align: left;
+
+    @media screen and (max-width: 400px) {
+        font-size: .75rem;
+    }
+}
+
+.content.show {
+    //max-height: 600px;
+    transition: all 0.5s ease;
+
+    p {
+        text-align: left;
+    }
+}
+.test{
+    padding: 1rem;
+}
+.arrow {
+    transition: all 0.2s ease-in-out;
+    margin-right: 20px;
+
+    @media screen and (max-width: 1230px) {
+        width: 12px;
+    }
+}
+
+.arrow_up {
+    transform: rotate(0deg);
+}
+
+.arrow_down {
+    transform: rotate(180deg);
+}

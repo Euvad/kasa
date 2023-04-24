@@ -1,0 +1,55 @@
+@import '../../utils/reset';
+
+.nav_list{
+    display: flex;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+    min-width: 150px;
+    color: $main-color;
+    font-size: clamp(12px, 2.5vw, 24px);
+    @media screen and (max-width: 700px){
+        gap: 20px;
+    }
+    &_item{
+        &_active{
+            position: relative;
+            color: $main-color;
+            transition: all 0.2s ease-in-out;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $main-color;
+                bottom: 0;
+                left: 0;
+                visibility: visible;
+                transform: scaleX(1);
+                transition: all 0.3s ease-in-out 0s;
+              }
+        }
+    }
+}
+
+.nav_list_item {
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $main-color;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+  
+    &:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
