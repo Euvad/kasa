@@ -27,7 +27,7 @@ export default function Accordion(props) {
             />
           </h3>
           <div className={(props.toggle === undefined ? toggle : props.toggle === props.dataid) ? 'content show' : 'content'}
-            style={{ maxHeight: `${(props.toggle === undefined ? toggle : props.toggle === props.dataid) ? height+'px' : '0'}` }}
+            style={{ maxHeight: `${(props.toggle === undefined ? toggle : props.toggle === props.dataid) ? height + 30 +'px' : '0'}` }}
           >
             <div ref={contentRef} className='test'>
               {Array.isArray(props.content) ? props.content.map((item, index) => {
