@@ -5,9 +5,11 @@ import NotFound from "./pages/notFound/notFound";
 import About from './pages/about/about';
 import Footer from './components/footer/footer';
 import Accomodation from './pages/accomodation/accomodation'
+import Header from './components/header/header';
 function App() {
   return (
     <div className='App'>
+      <Header/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='*' element={<NotFound />} />

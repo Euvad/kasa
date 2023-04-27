@@ -58,6 +58,7 @@
         }
 
         &_stars {
+            width: 180px;
             img {
                 height: 30px;
                 margin: 3px;
@@ -75,6 +76,7 @@
         color: $main-color;
         display: flex;
         flex-direction: column;
+        text-align: LEFT;
         align-items: flex-start;
         border: 0;
         padding: 0;

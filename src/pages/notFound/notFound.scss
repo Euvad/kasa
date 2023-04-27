@@ -3,6 +3,7 @@
 .notFound{
     height: 100%;
     margin: 0 auto;
+    padding: 0 20px;
     max-width: 1200px;
     color: $main-color;
 }
@@ -15,7 +16,7 @@
         min-height: 100%;
         margin-bottom: 6%;
         h1{
-            font-size: 288px;
+            font-size: 15vw;
             font-weight: 700;
         }
         p{

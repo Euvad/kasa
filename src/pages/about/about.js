@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import Banner from '../../components/banner/banner'
 import './about.scss'
-import Header from '../../components/header/header'
 import Accordion from '../../components/accordion/accordion'
+import bgimage from '../../assets/about_cover.png';
 function About() {
     const [toggle, setToggle] = useState(null);
 	const activate = (i) => {
@@ -38,8 +38,7 @@ function About() {
 	]
 	return (
 		<div className='about'>
-			<Header />
-			<Banner />
+			<Banner bgimage={bgimage}/>
 			{
 				data.map((data, id) => {
 					return (
